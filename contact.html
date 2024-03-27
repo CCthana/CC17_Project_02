@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <ul class="navbar">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./news.html">News</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="./about.html">About</a></li>
+    </ul>
+
+    <hr />
+    <h1>Contact</h1>
+    <p>Lorem ipsum dolor sit amet.</p>
+
+    <h3>Please Fill a form below</h3>
+
+    <form action="./index.html" method="GET">
+        <fieldset>
+            <legend>User info</legend>
+
+            <label> Firstname
+                <input type="text" name="fname" placeholder="john" />
+            </label>
+            <br /> <br />
+            <label> Lastname
+                <input type="text" name="lname" placeholder="smith" />
+            </label> <br /> <br />
+
+
+            <fieldset>
+                <legend>Course</legend>
+                <label>
+                    <input type="radio" name="course" value="html" /> HTML
+                </label>
+
+                <label>
+                    <input type="radio" name="course" value="css" /> CSS
+                </label>
+
+                <label>
+                    <input type="radio" name="course" value="js" /> Javascript
+                </label>
+            </fieldset>
+            <br />
+            <fieldset>
+                <legend>Framework</legend>
+                <label>
+                <input type="radio" name="fw" value="react" required /> React
+                </label>
+
+                <label>
+                    <input type="radio" name="fw" value="angular" required /> Angular
+                </label>
+            </fieldset>
+
+
+            <br />
+
+            <label>Date:</label>
+            <input type="date" id="date" name="date">
+            </label>
+
+            <label for="payment">Payment :
+                <select name="payment" id="payment">
+                    <option value="qr">QR code</option>
+                    <option value="visa">Visa</option>
+                    <option value="mastercard">Mastercard</option>
+                </select>
+            </label>
+
+            <br /> <br />
+            <button>OK</button>
+            <button type="reset">Reset</button>
+        </fieldset>
+    </form>
+</body>
+
+</html>
